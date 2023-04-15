@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "01_io_patterns",
+    "02_pdf_parser",
+    "03_json_to_arrow",
+]

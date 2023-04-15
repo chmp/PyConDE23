@@ -1,0 +1,30 @@
+[package]
+name = "json_to_arrow"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "json_to_arrow"
+path = "src/main.rs"
+
+[[bin]]
+name = "json_to_arrow_v2"
+path = "src/main_v2.rs"
+
+[[bin]]
+name = "json_to_arrow_v3"
+path = "src/main_v3.rs"
+
+[[bin]]
+name = "json_to_arrow_json_only"
+path = "src/main_json_only.rs"
+
+[dependencies]
+anyhow = "1"
+arrow2 = { version = "0.17", features = ["io_ipc"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_arrow = { version = "0.6.0-rc.4", features = ["arrow2-0-17"] }
+zip = { version = "0.6" }

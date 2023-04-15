@@ -1,0 +1,7 @@
+cattrs
+pdfminer.six
+pyarrow
+polars
+
+# for dev
+black[jupyter]
